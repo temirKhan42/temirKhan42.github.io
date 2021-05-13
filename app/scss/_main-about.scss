@@ -1,0 +1,96 @@
+.main {
+  .about {
+    text-align: center;
+
+    h2 {
+      margin-top: 1.875rem;
+      margin-bottom: 0.775rem;
+
+      @include breakpoint-up(medium) {
+        margin-top: 3.75rem;
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    &__table {
+      width: 100%;
+      table-layout: fixed;
+
+      @include breakpoint-up(medium) {
+        table-layout: auto;
+        width: 80%;
+      }
+
+      @include breakpoint-up(large) {
+        width: 60%;
+      }
+    }
+
+    tr {
+
+      > th { 
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+          width: auto;  
+          text-align: left;
+        }
+      }
+    
+      > * {
+        display: block;
+
+        &:not(:nth-child(3)) {
+          margin-bottom: 0.625rem;
+          
+          @include breakpoint-up(medium) {
+            margin-bottom: 1.25rem;
+          }
+        }
+
+        @include breakpoint-up(medium) {
+          display: table-cell;
+        }
+      }
+    
+      > td {
+        text-align: center;
+        vertical-align: center;
+
+        @include breakpoint-up(medium) {
+          text-align: left;
+        }
+
+        .img-tel,
+        .img-mail {
+          width: 1.125rem;
+          height: 1.125rem;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 0.625rem;
+
+          @include breakpoint-up(medium) {
+            width: 1.375rem;
+            height: 1.375rem;
+          }
+        }
+
+        a {
+          font-weight: 600;
+          color: black;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            cursor: pointer;
+            color: $red;
+          }
+        }
+      }
+    }
+
+    .photo {
+      display: none;
+    }
+  }
+}

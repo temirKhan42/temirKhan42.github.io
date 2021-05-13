@@ -1,0 +1,79 @@
+.experience {
+
+  &__table {
+    
+    @include breakpoint-up(large) {
+      margin-left: 5rem;
+      margin-right: 5rem;
+
+      tr:last-child td {
+        width: 100%;
+        display: block;
+        margin-left: 100%;
+      }
+    }
+
+    tr {
+      
+      td {
+        text-align: left;
+        padding-left: 1.25rem;
+        vertical-align: top;
+        
+        p {
+          margin-top: 0.625rem;
+        }
+
+        div {
+          padding: 1.875rem 0 1.875rem 1.25rem;
+
+          @include breakpoint-up(large) {
+            padding: 0;
+          }
+
+          ul {
+            margin-bottom: 0;
+            padding: 0 0 0 1.25rem;
+          }
+        }
+      }
+
+      td:nth-child(1) > div {
+
+        @include breakpoint-up(large) {
+          display: none;
+        }
+      }
+
+      td:nth-child(2) {    
+        display: none;
+
+        @include breakpoint-up(large) {
+          display: table-cell;
+          padding-bottom: 3.125rem;
+        }
+      }
+    }
+
+    tr:not(:last-child) {
+      
+      td:nth-child(1) {
+        border-left: 1px solid $grey-line;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -0.25rem;
+          left: -0.625rem;
+          width: 1.25rem;
+          height: 1.25rem;
+          z-index: 1;
+          border-radius: 50%;
+          background-color: $grey-line;
+        }
+      }
+    }
+  }
+}

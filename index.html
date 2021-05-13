@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume site">
+  <meta name="keywords" content="resume, job, programming, web-developer">
+  <meta name="author" content="Temirkhan Seisengaliyev">
+  <title>Temirkhan Seisengaliyev Resume</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,400&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link rel="stylesheet" media="print" href="dist/css/print.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container flex jc-sb ai-c">
+      <div id="hamburger" class="hamburger">
+        <div class="hamburger-t"></div>
+        <div class="hamburger-m"></div>
+        <div class="hamburger-b"></div>
+      </div>
+
+      <img src="images/logo.svg" alt="Логотип" width="60" height="60" class="logo">
+      
+      <nav class="menu-desctop">
+        <ul class="flex">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#edu">Образование</a></li>
+          <li><a href="#exprnc">Опыт</a></li>
+          <li><a href="#skills">Навыки</a></li>
+        </ul>
+      </nav>
+
+      <div class="languages">
+        <div class="underline">ru</div>
+        <div>/</div>
+        <div>eng</div>
+      </div> 
+    </div>
+  </header>
+
+  <div class="hero"> 
+    <div id="scroll-hero" class="hero__title">
+      <h1>Резюме</h1>
+    </div>
+    <div class="hero__quote flex f-column jc-fe">
+      <q class="quote">Что разум человека может постигнуть и во что он может поверить, того он способен достичь</q>
+      <br>
+      <cite class="quote-author">Наполеон Хилл, журналист и писатель </cite>
+    </div>
+    <nav id="menu-mobile" class="menu-mobile">
+      <ul class="flex f-column">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#edu">Образование</a></li>
+        <li><a href="#exprnc">Опыт</a></li>
+        <li><a href="#skills">Навыки</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <aside class="additional">
+    <div>
+      <h3>Связаться со мной</h3>
+      <a href="tel:123456789"><img src="#" alt="Телефон"></a>
+      <a href="mailto:123456789"><img src="#" alt="Почта"></a>
+    </div>
+  </aside>
+
+  <main class="main container container-px">
+    <section class="about" id="about">
+      <h2>Сейсенгалиев Темирхан</h2>
+      <span class="position">(junior front-end разработчик)</span>
+      <table class="about__table">
+        <tr>
+          <th>Дата рождения / возраст:</th>
+          <td>27.04.94 / 27</td>
+        </tr>
+        <tr>
+          <th>Место жительства</th>
+          <td>Казахстан г. Семей</td>
+        </tr>
+        <tr>
+          <th>Контакты:</th>
+          <td>
+            <a href="tel:123456789">   <i class="img-tel fas fa-phone-alt"></i>123456789</a>
+          </td>
+          <td>
+            <a href="mailto:abcdefg"><i class="img-mail fas fa-envelope"></i>abcdefg</a>
+          </td>
+        </tr>
+      </table>
+      <img class="photo" src="#" alt="my photo">
+    </section>
+    <hr>
+    <section class="edu" id="edu">
+      <h3>Образование</h3>
+      <span>2011-2015</span>
+      <table class="edu__table">
+        <tr>
+          <td>
+            Государственный университет имени Шакарима города Семей
+            инженерно технологический факультет, специальность машиностроение
+          </td>
+          <td>2011-2015</td>
+        </tr>
+      </table>
+    </section>
+    <hr>
+    <section class="experience" id="exprnc">
+      <h3>Опыт</h3>
+      <table class="experience__table">
+        <tr>
+          <td>Август 2015 - Декабрь 2015
+            <div>
+              ТОО «Семипалатинский мясокомбинат»<br> 
+              Помощник наладчика оборудования              
+            </div>
+          </td>
+          <td>
+            ТОО «Семипалатинский мясокомбинат»<br> 
+            Помощник наладчика оборудования
+          </td>
+        </tr>
+        <tr>
+          <td>Февраль 2016 - Март 2017
+            <div>
+              Рекламное агентство «Color Jungle»<br> 
+              Оператор гравировального станка с ЧПУ              
+            </div>
+          </td>
+          <td>
+            Рекламное агентство «Color Jungle»<br> 
+            Оператор гравировального станка с ЧПУ
+          </td>
+        </tr>
+        <tr>
+          <td>Апрель 2017 - Июль 2020
+            <div>
+              ТОО «КАЗПОЛИГРАФ»<br> 
+              Наладчик-оператор фальцевально-склеивающей машины              
+            </div>
+          </td>
+          <td>
+            ТОО «КАЗПОЛИГРАФ»<br> 
+            Наладчик-оператор фальцевально-склеивающей машины
+          </td>
+        </tr>
+        <tr>
+          <td>Июль 2020 - по настоящее время
+            <p>            Самостоятельное обучение по специальности front-end разработчик</p>
+            <div>
+              <h4>Источники самообразования:</h4>
+              <ul>
+                <li>Кит Грант - "CSS для профи"</li>
+                <li>learn.javascript.ru - "Современный учебник JavaScript"/</li>
+                <li>Образовательный портал - "Hexlet"</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div>
+              Источники самообразования:
+              <ul>
+                <li>Кит Грант - "CSS для профи"</li>
+                <li>learn.javascript.ru - "Современный учебник JavaScript"/</li>
+                <li>Образовательный портал - "Hexlet"</li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Опыт работы в IT сфере: отсутствует</td>
+        </tr>
+      </table>
+    </section>
+    <hr>
+    <section class="skills" id="skills">
+      <h3>Навыки</h3>
+      <table class="skills__table">
+        <thead>
+          <tr>
+            <td>Специальные</td>
+            <td> 
+              <ul>
+                <li>
+                  <progress value="80" max="100">80</progress>
+                  <h4>HTML</h4>
+                </li>
+                <li>
+                  <progress value="70" max="100">70</progress>
+                  <h4>CSS</h4>
+                </li>
+                <li>
+                  <progress value="50" max="100">50</progress>
+                  <h4>JS</h4>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </thead>  
+        <tfoot>
+          <tr>
+            <td>Дополнительные</td>
+            <td>
+              Уровень английского: <strong>читаю документацию с переводчиком, свободно понимаю бытовую речь</strong>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <button class="githubBtn">
+        <i class="fab fa-github"></i> мой Github профиль
+      </button>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <section class="footer__content container container-px">
+
+      <div class="footer__form">
+        <h4>Написать мне</h4>
+        <form action="">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea name="message" id="message" placeholder="Message"></textarea>
+          <button id="form-btn">Отправить</button>
+        </form>
+      </div>
+
+      <div class="footer__sitemap">
+        <img src="images/logo.svg" alt="Логотип" width="60" height="60" class="logo">
+      
+        <nav class="footer__menu">
+          <ul class="flex f-column">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#edu">Образование</a></li>
+            <li><a href="#exprnc">Опыт</a></li>
+            <li><a href="#skills">Навыки</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__print">
+        <button class="print-btn" id="print-btn"><i class="fas fa-print"></i>Распечатать резюме</button>
+      </div>
+    </section>
+  </footer>
+
+  <div class="copyright">
+    <p>Copyright © 2021 Seisengaliyev Temirkhan</p>
+  </div>
+
+  <script src="app/js/script.js"></script>
+</body>
+</html>

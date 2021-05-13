@@ -1,0 +1,126 @@
+@media print {
+  header, footer, aside, nav, form, iframe, .menu, .hero, .adslot, button, .copyright {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    padding: 1cm 1cm;
+    line-height: 1.5;
+  }
+
+  h2 {
+    margin-top: 0 !important;
+    margin-bottom: 0.3cm !important;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+  
+  h2, h4, p, th, td {
+    font-size: 10pt;
+    margin: 0;
+  }
+
+  hr {
+    margin-bottom: 0.5cm;
+  }
+
+  section {
+    text-align: left;
+  }
+
+  .about__table, 
+  .edu__table,
+  .experience__table,
+  .skills__table {
+    margin: 0.5cm 0 !important;
+  }
+
+  .about__table {
+    table-layout: auto !important;
+    width: 100% !important;
+  }
+
+  .about__table tr > th {
+    width: auto !important;  
+    text-align: left !important;
+  }
+
+  .about__table tr > * {
+    display: table-cell !important;
+  }
+
+  .about__table tr > td {
+    text-align: left !important;
+  }
+
+  .edu > span {
+    display: none;
+  }
+
+  .edu__table tr td {
+    text-align: left;
+    width: 80%;
+  }
+
+  .edu__table tr td:last-child {
+    display: block !important;
+    text-align: right;
+  }
+
+  .experience__table tr > td:first-child div {
+    display: none;
+  }
+
+  .experience__table tr > td:last-child {
+    display: block;
+    padding-bottom: 0.2cm !important;
+  }
+
+  .experience__table tr > td:last-child div {
+    padding: 0;
+  }
+
+  .experience__table ul {
+    margin: 0;
+  }
+
+  .experience__table > tr:not(:last-child) > td:nth-child(1)::before {
+    width: 0.5cm !important;
+    height: 0.5cm !important;
+  }
+
+  .skills__table {
+    display: flex;
+  }
+
+  .skills__table thead,
+  .skills__table tfoot {
+    display: block;
+    width: 50%;
+  }
+
+  .skills__table thead::after,
+  .skills__table tfoot::after {
+    display: none;
+  }
+
+  .skills__table tr > td {
+    text-align: left;
+  }
+
+  .skills__table thead tr td:last-child ul {
+    display: flex;
+  }
+
+  .skills__table thead tr td:last-child ul li:not(:first-child)  {
+    margin-left: 0.5cm;
+  }
+
+  .skills__table thead progress {
+    width: 2cm !important;
+    height: 0.5cm !important;
+  }
+}

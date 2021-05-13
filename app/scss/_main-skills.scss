@@ -1,0 +1,159 @@
+.skills__table {
+  width: 100%;
+
+  @include breakpoint-up(large) {
+    display: flex;
+  }
+
+  thead,
+  tfoot {
+
+    @include breakpoint-up(large) {
+      display: block;
+      width: 50%;
+    }
+
+    tr > td {
+      width: 100%;
+      display: block;
+      text-align: center;
+
+      @include breakpoint-up(large) {  
+        text-align: left;
+      }
+    }
+    
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 44%;
+      height: 0.125rem;
+      background-color: $grey-line;
+    
+      @include breakpoint-up(large) {
+        display: none;
+      }
+    }
+  }
+
+  thead tr td {
+
+    &:first-child {
+      margin-bottom: 1.25rem;
+    }
+
+    &:last-child ul {
+      list-style: none;
+      padding: 0;
+
+      @include breakpoint-up(large) {
+        display: flex;
+      }
+    }
+
+    &:last-child ul li {
+
+      @include breakpoint-up(large) {
+
+        &:not(:first-child) {
+          margin-left: 3.125rem;
+        }
+
+        text-align: center;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1.25rem;
+      }
+
+      &:last-child {
+        margin-bottom: 1.875rem;
+      }
+
+      &:nth-child(1) progress::after {
+        content: "80%";
+      }
+
+      &:nth-child(2) progress::after {
+        content: "70%";
+      }
+
+      &:nth-child(3) progress::after {
+        content: "50%";
+      }
+
+      progress {
+        display: block;
+        width: 100px;
+        height: 20px;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.625rem;
+        position: relative;
+        -webkit-appearance: none;
+        appearance: none;
+
+        &::-webkit-progress-inner-element,
+        &::-webkit-progress-bar,
+        &::-webkit-progress-value {
+          border: none;
+        }
+
+        &::-webkit-progress-inner-element {
+          border-radius: 1rem;
+          background-color: $blue;
+        }
+
+        &::-webkit-progress-bar {
+          border-radius: 1rem;
+          background-color: $blue;
+        }
+
+        &::-webkit-progress-value {
+          border-top-left-radius: 1rem;
+          border-bottom-left-radius: 1rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          background-color: $yellow;
+        }
+        
+        &::after {
+          display: inline-block;
+          color: white;
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: bold;
+          position: absolute;
+          z-index: 10000;
+          top: 0;
+          left: 0;
+          margin-left: 35%;
+        } 
+      }
+    }
+  }
+
+  tfoot tr td {
+    &:first-child {
+      margin: 1.25rem 0;
+    }
+
+    &:last-child {
+      margin-bottom: 1.875rem;
+    }
+  }
+}
+
+.githubBtn {
+  width: 18.75rem;
+  height: 3.125rem;
+  margin-bottom: 2.5rem;
+  padding: 0;
+
+  @include breakpoint-up(large) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

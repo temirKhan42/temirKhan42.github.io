@@ -1,0 +1,169 @@
+.footer {
+  background-color: $blue;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.875rem;
+    padding-bottom: 2.5rem;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      padding-top: 4.375rem;
+      padding-bottom: 3.125rem;
+    }
+  }
+
+  &__form {
+    order: 1;
+    flex: 1;
+
+    @include breakpoint-up(medium) {
+      max-width: 23.125rem;
+      margin: 0 auto;
+    }
+
+    @include breakpoint-up(large) {
+      order: 0;
+    }
+
+    h4 {
+      color: white;
+      margin-bottom: 1.25rem;
+      text-align: left;
+
+      @include breakpoint-up(medium) {
+        text-align: center;
+      }
+
+      @include breakpoint-up(large) {
+        text-align: left;
+      }
+    }
+
+    form {
+      text-align: right;
+
+      @include breakpoint-up(medium) {
+        text-align: center;
+      }
+
+      @include breakpoint-up(large) {
+        text-align: left;
+      }
+
+      input,
+      textarea {
+        
+        &:focus {
+          border: none;
+          outline: transparent;
+        }
+
+        &::-webkit-input-placeholder {
+          color: $dark-grey;
+        }
+      }
+
+      input:not([type="submit"]) {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 1.25rem;
+        appearance: none;
+        border: none;
+        font-size: 0.875rem;
+        font-weight: 400;
+
+        @include breakpoint-up(medium) {
+          width: 15.625rem;
+          font-size: 1rem;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        height: 5rem;
+        margin-bottom: 1.25rem;
+
+        @include breakpoint-up(medium) {
+          width: 23.125rem;
+        }
+      }
+
+      button {
+        text-align: right;
+      }
+    }
+  }
+
+  &__sitemap {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    flex: 1;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .logo {
+      display: inline-block;
+      margin-bottom: 1.875rem;      
+    }
+  }
+
+  &__menu {
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: all 0.2s ease-in-out;
+    }
+
+    ul > li:not(:last-child) {
+      margin-bottom: 1.625rem;
+    }
+
+    ul > li:hover {
+      a {
+        color: $red;
+      }
+    }
+  }
+
+  &__print {
+    flex: 1;
+
+    .print-btn {
+      margin-bottom: 2.5rem;
+    }
+
+    @include breakpoint-up(large) {
+      align-self: flex-end;
+      
+      .print-btn {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.copyright {
+  width: 100vw;
+  height: 1.875rem;
+  background-color: $dark-blue;
+  text-align: center;
+  
+  p {
+    margin: 0;
+    font-size: 10px;
+    color: $dark-grey;
+    line-height: 1.875rem;
+  }
+}
